@@ -4,7 +4,7 @@ class Program
     static void Main()
     {
         int marks = 75;
-        //Branching
+        
 
         if (marks >= 60)
         {
@@ -35,7 +35,7 @@ class Program
         }
 
 
-        //for loop
+        
 
         Console.WriteLine("FOR LOOP");
         for (int i = 1; i <= 5; i++)
@@ -44,7 +44,7 @@ class Program
 
         }
 
-        //WHILE LOOP
+        
 
         Console.WriteLine("\n while loop (Even)");
 
@@ -57,7 +57,7 @@ class Program
             w += 2;
         }
 
-        //foreach loop
+        
 
         Console.WriteLine("\n foreach loop");
 
