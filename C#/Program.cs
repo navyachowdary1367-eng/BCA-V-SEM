@@ -1,26 +1,28 @@
 ﻿using System;
-class Student
+class Animal
 {
-    public int RollNo { get; set; }
-    public string Name { get; set; }
-    public Student(int r, string n)
+    public virtual void Speak()
     {
-        RollNo = r;
-        Name = n;
+        Console.WriteLine("Animal makes a sound");
     }
-    public void Display()
+}
+class Dog : Animal
+{
+    public override void Speak()
     {
-        Console.WriteLine("Roll No:" + RollNo + ",Name:" + Name);
+        Console.WriteLine("Dog barks");
     }
 }
 class Program
 {
     static void Main()
     {
-        Student s1 = new Student(101, "Mahi");
-        Student s2 = new Student(102, "Akashika");
-        s1.Display();
-        s2.Display();
+        Animal a1 = new Animal();
+        Animal a2 = new Dog();
+        a1.Speak();
+        a2.Speak();
     }
 }
+    
+
 
